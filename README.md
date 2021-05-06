@@ -22,6 +22,7 @@ docker run \
 ```
 
 **Formatter**
+
 This repository is written in Python and runs Black on all Pull Request.
 
 To install and run black formatter:
