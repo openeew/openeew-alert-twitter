@@ -6,6 +6,7 @@ from os import environ
 
 from twitter_alert import send_tweet
 
+
 def run():
     """Main method that obtains enviroment variables and connects to MQTT"""
     host = getenv("MQTT_HOST", "localhost")
@@ -47,7 +48,7 @@ def on_message(client, userdata, message):
         decoded_message = str(message.payload.decode("utf-8", "ignore"))
         data = json.loads(decoded_message)
         print(f"Received data: {data}")
-        send_tweet("Testing") # Make up message later
+        send_tweet("Testing")  # Make up message later
 
     except BaseException as exception:
         print(exception)
