@@ -61,7 +61,7 @@ def on_message(client, userdata, message):
 
 def format_message(city, magnitude):
     """Creates a twitter message using the city and magnitude"""
-    short_slack_invite_url = "https://bit.ly/3u6Xji4"  # made on bitly, likely temporary
+    short_slack_invite_url = "https://bit.ly/3wqhdGm"  # made on bitly, likely temporary
     event_msg = f"OpenEEW has detected an earthquake of magnitude {magnitude} in the city of {city}\n\n"
     disclaimer_msg = "Disclaimer Text : This is just a test \n\n"
     join_msg = f"To get involved join us on Slack {short_slack_invite_url}"
